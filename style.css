@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Fira Sans";
+}
+
+body {
+    background-color: beige;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 20px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-box input{
+    width: 100%;
+    /* display: block; */
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within{
+    box-shadow: 7px 8px 15px 7px rgba(23, 18, 18, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: rgb(94, 93, 91);
+    text-align: center;
+}
+
+.result {
+    background-color: white;
+    margin: 20px 0;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.result:hover {
+    box-shadow: 10px 10px 10px 10px rgba(23, 18, 18, 0.1);
+}
+
+.result h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.result p {
+    margin-bottom: 10px;
+}
+
+.result a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5c6bc0;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    /* max-width: 700px; */
+}
+
+.result a:hover {
+    background-color: #4d589c;
+}
